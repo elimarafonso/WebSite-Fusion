@@ -1,0 +1,107 @@
+1- cria na raiz do projeto ".gitignore": 
+	__pychache
+	*.*~
+	.env
+	.idea
+	template/*
+
+
+2- no arquivo  requirements.txt:
+	dj-static==(versao atual)
+	django-stdimage==(versao atual)
+	psycopg2-binary(versao atual)
+
+
+3- configuração wsgi.py na APLICAÇÃO:
+	"apresentação de arquivos estaticos e arquivos de media"
+	from dj_static import Cling, MediaCling
+
+	application = Cling(MediaCling(get_wsgi_application()))
+
+4- no arquivo Settings.py da APLICAÇÃO
+	instalar: pip install dj-database-url
+	pip freeze > requirements.txt
+	
+	no arquivo settings.py:	
+		
+		DEBUG: FALSE
+		MEDIA_URL='/media/'	
+		MEDIA_ROOT='os.path.join(BASE_DIR, 'media')'
+		import dj_database_url (para que o heroku passe a 				informaçao do host / banco de dados)
+
+	criar novo: DATABASES= {
+		'default': dj_database_url.config() 
+		}
+
+	comenta o Email_backend
+	adicionar a linha: 
+		LOGOUT_REDIRECT_URL = 'index' (ACESSANDO A AREA ADMIN E CLICANDO EM LOGOUT, O SISTEMA REDIRECIONA PARA A URL INDEX)
+
+
+5- no terminal: 
+	git init
+	git add .
+	git commint -m "projeto final"
+	
+	heroku login
+	(entrar no heroku)
+	
+	cria um arquivo na raiz do projeto "runtime.txt":
+	python-versao-atual do python
+	
+	criar na raiz "Procfile":
+	web: gunicorn fusion.wsgi --log-file -	
+	(roda pra mim o projeto com o comando gunicorn 	'nomedoprojeto'.wsgi pra pegar o arquivo wsgi da aplicação e os 	arquivos de logs não sao necessarios)
+
+	git status
+	git add .
+	git comming -m "arquivos do heroku"
+	
+	criando a aplicação:
+	heroku create "nome da aplicação" --buildpack heroku/python
+	
+	git push heroku master (publicando)
+		
+
+	(criar as tabelas no banco do heroku)
+	heroku run python manage.py migrate
+	(criando usuário adm no heroku)
+	heroku run python manage.py createsuperuser
+	(cria usuario e senha)
+	
+	
+
+
+6- mudando interface do django/admin
+	pip install-adminlte2
+	
+	no settings.py:
+	colocar a aplicação 'core' primeiro da lista
+	adicionar: 'django_adminlte', 'django_adminlte_theme',
+	
+	pip freeze > requerements.txt
+	
+	git add .
+	git commint -m "mudando tema do admin"
+	git push heroku master
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
