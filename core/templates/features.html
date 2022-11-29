@@ -1,0 +1,61 @@
+{% load static %}
+{% block content %}
+
+
+<section id="features" class="section-padding" xmlns="http://www.w3.org/1999/html">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">RECURSOS IMPRESSIONANTES</h2>
+          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        </div>
+        <!--INICIO DO BLOCO-->
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <!--INICIO ITENS DA ESQUERDA-->
+            <div class="content-left">
+ {% for feature_esquerdo in Feature_esquerdo %}
+              <div class="box-item wow fadeInLeft" data-wow-delay="0.9s">
+                <span class="icon">
+                  <i class="{{ feature_esquerdo.icon }}"></i>
+                </span>
+                <div class="text">
+                  <h4>{{ feature_esquerdo.name }}</h4>
+                  <p>{{ feature_esquerdo.description }}</p>
+                </div>
+              </div>
+ {% endfor %}
+            </div>
+          </div>
+          <!--FIM DOS ITENS DA ESQUERDA-->
+
+          <!--INICIO IMAGEM CENTRAL-->
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="show-box wow fadeInUp" data-wow-delay="0.3s">
+              <img src="{% static 'img/feature/intro-mobile.png' %}" alt="">
+            </div>
+          </div>
+          <!--FIM IMAGEM CENTRAL-->
+
+          <!--INICIO ITENS DIREITA-->
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="content-right">
+            {% for feature_direito in Feature_direito %}
+              <div class="box-item wow fadeInLeft" data-wow-delay="0.9s">
+                <span class="icon">
+                  <i class="{{ feature_direito.icon }}"></i>
+                </span>
+                <div class="text">
+                  <h4>{{ feature_direito.name }}</h4>
+                  <p>{{ feature_direito.description }}</p>
+                </div>
+              </div>
+                {% endfor %}
+            </div>
+          <!--FIM ITENS DIREITA-->
+        </div>
+        <!--FIM DO BLOCO-->
+      </div>
+   </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+arquivo: docker-compose.yml
+
+version: 'numero da versao'
+
+volumes:
+  data: 
+
+services:
+  database:
+    image:postgres:'versao sem aspas'
+    ports:
+      - 5432:5432 (mapeando a porta do pc com a porta do container)
+    environment:
+      - POSTGRES_PASSWORD = (SUA SENHAA)
+    volumes:
+      - data:/var/lib/postgresql/data
+(usar esses dois atributos quando for subir o site)
+      - type: tmpfs
+	target: /dev/shm
+
+
+*************************************
+POWER SHELL
+
+docker-composer up -d (pra n travar o terminar e rodar background)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

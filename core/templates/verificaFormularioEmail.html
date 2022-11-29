@@ -1,0 +1,28 @@
+{% load static %}
+
+<!-- Mensagens do formulário start -->
+ <div class="container" id="MsgFormulario">
+
+            {% if messages %}
+                   {% for m in messages %}
+                        {% if m.tags == 'error' %}
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                  <strong>{{ m }}, <p>Verifique se todos os campos foram preenchidos corretamente</p></strong>
+                                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+
+                        {% else %}
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                  <strong>{{ m }}</strong>
+                                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                         {% endif %}
+                    {% endfor %}
+             {% endif %}
+      </div>
+
+ <!-- Mensagens do formulário end -->
