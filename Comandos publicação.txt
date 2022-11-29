@@ -1,5 +1,5 @@
 1- cria na raiz do projeto ".gitignore": 
-	__pychache
+	__pycache__
 	*.*~
 	.env
 	.idea
@@ -27,6 +27,7 @@
 		DEBUG: FALSE
 		MEDIA_URL='/media/'	
 		MEDIA_ROOT='os.path.join(BASE_DIR, 'media')'
+		
 		import dj_database_url (para que o heroku passe a 				informaçao do host / banco de dados)
 
 	criar novo: DATABASES= {
@@ -60,7 +61,7 @@
 	criando a aplicação:
 	heroku create "nome da aplicação" --buildpack heroku/python
 	
-	git push heroku master (publicando)
+	git push heroku main (publicando)
 		
 
 	(criar as tabelas no banco do heroku)
