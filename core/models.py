@@ -29,8 +29,9 @@ class Funcionario(Base):
     biografia = models.TextField('Biografia', max_length=200)
     foto = StdImageField('Foto', upload_to='equipe', variations={'thumb': {'width': 300, 'height': 300}})
     facebook = models.CharField('Facebook', max_length=200, default='#')
-    twitter = models.CharField('twitter', max_length=200, default='#')
-    instagram = models.CharField('instagram', max_length=200, default='#')
+    twitter = models.CharField('Twitter', max_length=200, default='#')
+    instagram = models.CharField('Instagram', max_length=200, default='#')
+    linkedin = models.CharField('Linkedin', max_length=200, default='#')
 
     class Meta:
         verbose_name = 'Funcionario'
