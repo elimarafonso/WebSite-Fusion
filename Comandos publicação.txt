@@ -74,7 +74,7 @@
 
 
 6- mudando interface do django/admin
-	pip install-adminlte2
+	pip install-adminlte3
 	
 	no settings.py:
 	colocar a aplicação 'core' primeiro da lista
@@ -84,7 +84,7 @@
 	
 	git add .
 	git commint -m "mudando tema do admin"
-	git push heroku master
+	git push heroku main
 	
 
 	
