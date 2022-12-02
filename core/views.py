@@ -3,7 +3,7 @@ from django.views.generic import FormView, CreateView
 from django.urls import reverse_lazy
 from django.contrib import messages
 
-from .models import Servico, Funcionario, Features, Avaliacao
+from .models import Servico, Funcionario, Features, Avaliacoes
 from .forms import ContactForm
 # Create your views here.
 
@@ -51,5 +51,5 @@ class TestemunhoView(FormView):
 
     def get_context_data(self, **kwargs):
         context = super(TestemunhoView, self).get_context_data(**kwargs)
-        context['Avaliacoes'] = Avaliacao.objects.order_by('?').all()
+        context['Avaliacoes'] = Avaliacoes.objects.order_by('?').all()
         return context

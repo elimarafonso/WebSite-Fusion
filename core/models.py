@@ -84,7 +84,7 @@ class Features(Base):
 
 
 # avaliações do site (testemunho)
-class Avaliacao(Base):
+class Avaliacoes(Base):
     ICONE_CHOICES = {
         (1, '★'),
         (2, '★★'),
@@ -95,7 +95,7 @@ class Avaliacao(Base):
     nome = models.CharField('Nome', max_length=100)
     profissao = models.ForeignKey('core.Cargo', verbose_name='Cargo', on_delete=models.CASCADE)
     comentario = models.TextField('Comentário', max_length=120)
-    estrelas = models.IntegerField('Estrelas', max_length=5, choices=ICONE_CHOICES)
+    estrelas = models.IntegerField('Estrelas',  choices=ICONE_CHOICES)
     foto = StdImageField('Foto', upload_to='equipe', variations={'thumb': {'width': 75, 'height': 75}})
 
     class Meta:

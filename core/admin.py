@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Cargo, Servico, Funcionario, Features, Avaliacao
+from .models import Cargo, Servico, Funcionario, Features, Avaliacoes
 
 
 @admin.register(Cargo)
@@ -24,7 +24,7 @@ class FeatureAdmin(admin.ModelAdmin):
     list_display = ('name', 'icon', 'description')
 
 
-@admin.register(Avaliacao)
+@admin.register(Avaliacoes)
 class AvaliacaoAdmin(admin.ModelAdmin):
     list_display = ('ativo', 'nome', 'foto', 'profissao', 'comentario', 'estrelas')
 
