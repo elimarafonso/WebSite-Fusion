@@ -76,9 +76,31 @@ class Features(Base):
     description = models.TextField('Descrição', max_length=200)
 
     class Meta:
-
         verbose_name = 'Recurso' # quando vai editar um item específico
         verbose_name_plural = 'Recursos' # Aparece na página ininicial
 
     def __str__(self):
         return self.name
+
+
+# avaliações do site (testemunho)
+class Avaliacao(Base):
+    ICONE_CHOICES = {
+        (1, '★'),
+        (2, '★★'),
+        (3, '★★★'),
+        (4, '★★★★'),
+        (5, '★★★★★')
+    }
+    nome = models.CharField('Nome', max_length=100)
+    profissao = models.ForeignKey('core.Cargo', verbose_name='Cargo', on_delete=models.CASCADE)
+    comentario = models.TextField('Comentário', max_length=120)
+    estrelas = models.IntegerField('Estrelas', max_length=5, choices=ICONE_CHOICES)
+    foto = StdImageField('Foto', upload_to='equipe', variations={'thumb': {'width': 75, 'height': 75}})
+
+    class Meta:
+        verbose_name = 'Avaliação'
+        verbose_name_plural = 'Avaliações'
+
+    def __str__(self):
+        return self.estrelas

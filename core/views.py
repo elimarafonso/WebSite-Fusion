@@ -3,7 +3,7 @@ from django.views.generic import FormView, CreateView
 from django.urls import reverse_lazy
 from django.contrib import messages
 
-from .models import Servico, Funcionario, Features
+from .models import Servico, Funcionario, Features, Avaliacao
 from .forms import ContactForm
 # Create your views here.
 
@@ -44,11 +44,12 @@ class IndexView(FormView):
         return super(IndexView, self).form_invalid(form, *args, **kwargs)
 
 
-class Formulario(FormView):
-    template_name = 'teste.html'
+class TestemunhoView(FormView):
+    template_name = 'testimonial.html'
     form_class = ContactForm
-    success_url = 'teste'
+    success_url = 'testemunho'
 
-    def form_valid(self, form):
-        form.send_email()
-        return super().form_valid(form)
+    def get_context_data(self, **kwargs):
+        context = super(TestemunhoView, self).get_context_data(**kwargs)
+        context['Avaliacoes'] = Avaliacao.objects.order_by('?').all()
+        return context
