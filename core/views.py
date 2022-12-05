@@ -25,6 +25,7 @@ class IndexView(FormView):
         features = Features.objects.all()
         context['Feature_esquerdo'] = features[:total_recursos]
         context['Feature_direito'] = features[total_recursos:]
+        context['Avaliacoes'] = Avaliacoes.objects.order_by('?').all()
 
         return context
 
@@ -52,4 +53,5 @@ class TestemunhoView(FormView):
     def get_context_data(self, **kwargs):
         context = super(TestemunhoView, self).get_context_data(**kwargs)
         context['Avaliacoes'] = Avaliacoes.objects.order_by('?').all()
+
         return context
