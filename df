@@ -1,0 +1,101 @@
+* [33mcommit 59c32a072b894e3e7920fce5a0cfd5da414f7474[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mheroku/main[m[33m)[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Mon Dec 5 10:14:10 2022 -0300
+[31m|[m 
+[31m|[m     versão final
+[31m|[m 
+* [33mcommit 9f5f2062726cf33cda19a9c0b607c961a42975ac[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Fri Dec 2 10:22:25 2022 -0300
+[31m|[m 
+[31m|[m     adicionando avaliaçoes
+[31m|[m 
+* [33mcommit ac5d4cbcfc6b5fd636af569be2d1d557fb38b5ac[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Fri Dec 2 10:22:13 2022 -0300
+[31m|[m 
+[31m|[m     adicionando avaliaçoes
+[31m|[m 
+* [33mcommit 93947341116a1295130f48f925126d1f697f3c5a[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Fri Dec 2 10:12:41 2022 -0300
+[31m|[m 
+[31m|[m     adicionando avaliaçoes
+[31m|[m 
+* [33mcommit a8bd3b29ea1d33ea540da0b50b779d48920c812d[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Wed Nov 30 09:32:51 2022 -0300
+[31m|[m 
+[31m|[m     atualizando contato
+[31m|[m 
+* [33mcommit f238d6a63c213f290ffe4669bf6f170fd2fcee96[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Tue Nov 29 16:39:46 2022 -0300
+[31m|[m 
+[31m|[m     atualizando linkedin
+[31m|[m 
+* [33mcommit 677115934c98d0e55afc643b848c03212e3d9547[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Tue Nov 29 16:32:41 2022 -0300
+[31m|[m 
+[31m|[m     atualizando linkedin
+[31m|[m 
+* [33mcommit e924fca697aa2f4b5ade5975e5c3430164f61c48[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Tue Nov 29 16:30:11 2022 -0300
+[31m|[m 
+[31m|[m     atualizando linkedin
+[31m|[m 
+* [33mcommit 070fe64d8849d3bbcb4d3c2bcfa05f5d696a5c3a[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Tue Nov 29 16:24:16 2022 -0300
+[31m|[m 
+[31m|[m     atualizando rede sociais funcionario
+[31m|[m 
+* [33mcommit 9b2ac1fddf9a731c384c6c799cc684ad0b5dd2d9[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Tue Nov 29 16:10:59 2022 -0300
+[31m|[m 
+[31m|[m     atualizando preços
+[31m|[m 
+* [33mcommit d5774cc70cedaeeeb379bf8772668fb361784157[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Tue Nov 29 15:55:12 2022 -0300
+[31m|[m 
+[31m|[m     traduzindo rodape
+[31m|[m 
+* [33mcommit 2b19063d3d2305391a06bac94bd12ac45d02afff[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Tue Nov 29 15:43:13 2022 -0300
+[31m|[m 
+[31m|[m     adicionando mapa de Capelinha
+[31m|[m 
+* [33mcommit 38f52474ea386ac49841869db10870991016f2aa[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Tue Nov 29 15:35:30 2022 -0300
+[31m|[m 
+[31m|[m     alterando base-html para ptbr
+[31m|[m 
+* [33mcommit 677d58937de88ff38763233f08c89f38d2cfc892[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Tue Nov 29 10:54:25 2022 -0300
+[31m|[m 
+[31m|[m     mudando interface Admin
+[31m|[m 
+* [33mcommit 7150a1e3775635dc2aec11eb680c36ebf35adf78[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Tue Nov 29 10:29:50 2022 -0300
+[31m|[m 
+[31m|[m     arquivos heroku
+[31m|[m 
+* [33mcommit 7997301fa6589a00b678d940f7075cc1cb2f812c[m
+[31m|[m Author: Elimar Afonso <elimar_afonso@hotmail.com>
+[31m|[m Date:   Tue Nov 29 10:22:28 2022 -0300
+[31m|[m 
+[31m|[m     Versão Final
+[31m|[m 
+* [33mcommit 161e769f7f8feceb5273814039f104a460ca7f5e[m[33m ([m[1;31morigin/main[m[33m)[m
+  Author: Elimar Afonso <elimar_afonso@hotmail.com>
+  Date:   Tue Nov 29 01:14:21 2022 -0300
+  
+      versao inicial

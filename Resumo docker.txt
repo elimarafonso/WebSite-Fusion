@@ -22,7 +22,7 @@ services:
 *************************************
 POWER SHELL
 
-docker-composer up -d (pra n travar o terminar e rodar background)
+docker-compose up -d (pra n travar o terminar e rodar background)
 
 
 

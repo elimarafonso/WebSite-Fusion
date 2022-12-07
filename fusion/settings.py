@@ -85,12 +85,12 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 # USAR ESSE QUANDO FOR PUBLICAR
-DATABASES = {
+'''DATABASES = {
     'default': dj_database_url.config()
-}
+}'''
 
 # BANCO PARA DESENVOLVIMENTO
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'fusion',
@@ -100,7 +100,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-'''
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -150,9 +150,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGOUT_REDIRECT_URL = 'index'
 
 # email de teste console
-'''
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-'''
+
 
 # email produção, PUBLICANDO EM ALGUM SERVER COM EMAIL
 '''
