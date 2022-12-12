@@ -69,7 +69,26 @@ omit =
 --> TESTANDO "models.py"
 
 -->dentro da pasada do projeto, (volte com o comando "cd .." )
- 
+--> sempre que for mostrar o teste no html é preciso deletar o diretório e fazer todo o processo a seguir
+
+--> deleta o diretorio: 
+	->"rm htmlcov/"
+
+--> roda o teste do coverage
+	-> 'coverage run manage.py test'
+
+-->gera o html dos testes:
+	->'coverage html'
+
+--> entra do diretorio htmlcov
+	-> cd htmlcov
+
+--> inicia um servidor python para abrir o relatorio html
+	->'python -m http.server'
+
+
+
+
 
 
 --> no diretorio 'tests'
@@ -83,6 +102,7 @@ omit =
 --> from core.models import get_file_path
 
 
+TESTANDO O METODO 'get_file_path' de models onde ele renomeia o arquivo para que n ocorra duplicidade
 
 --> cria a classe: 'GetFilePathTestCase(TestCase)'
 
@@ -96,7 +116,7 @@ omit =
 
 
 
-
+TESTANDO os metodos '__str__' de Cargo, Funcionario, Serviço, Avaliacoes e Features
 
 
 
