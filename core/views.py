@@ -40,18 +40,9 @@ class IndexView(FormView):
     # caso formuláro INválido: coloca uma msg de erro e retorna o formulário
     def form_invalid(self, form, *args, **kwargs):
         print('Entrou do INvalid')
-        print(dir(messages))
+        '''print(dir(messages))'''
         messages.error(self.request, 'Erro ao enviar E-mail')
         return super(IndexView, self).form_invalid(form, *args, **kwargs)
 
 
-class TestemunhoView(FormView):
-    template_name = 'testimonial.html'
-    form_class = ContactForm
-    success_url = 'testemunho'
 
-    def get_context_data(self, **kwargs):
-        context = super(TestemunhoView, self).get_context_data(**kwargs)
-        context['Avaliacoes'] = Avaliacoes.objects.order_by('?').all()
-
-        return context
