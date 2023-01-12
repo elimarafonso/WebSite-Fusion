@@ -1,5 +1,10 @@
 # WebSite-Fusion
 Projeto profissional, comercial de uma página web para uma empresa fictícia chamada FUSION, este website possui cadastros e listagem de informações do banco e envio de e-mail, como DESENVOLVEDORES, TECNOLOGIAS.
+
+![image](https://user-images.githubusercontent.com/105725065/212089141-bd75640b-5612-42b6-8198-772bcb7d168f.png)
+
+![image](https://user-images.githubusercontent.com/105725065/212089008-da7284f4-6334-4d73-af50-80864297b61e.png)
+
 ![HOME](https://user-images.githubusercontent.com/105725065/212086138-1e808bfe-5dc5-479d-848b-f8c26a30b612.png)
 ![SERVIÇOS](https://user-images.githubusercontent.com/105725065/212086171-9609cb70-8e5a-47ee-ab10-c7207616a6cd.png)
 ![EQUIPE  ](https://user-images.githubusercontent.com/105725065/212086245-7eac5906-38f2-4f56-a471-e3939960997c.png)
